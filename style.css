@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(/intro-component-with-signup-form-master/images/bg-intro-mobile.png);
+}
+
+.container {
+  padding: 2rem;
+}
+
+.left-title {
+  color: rgb(240, 244, 248);
+  max-width: 550px;
+  margin: auto;
+}
+
+.left-title h2 {
+  margin: 3rem 0 1.5rem 0;
+}
+
+.notification {
+  margin: auto;
+  margin-top: 3.5rem;
+  border-radius: 10px;
+  padding: 1rem 3rem;
+  font-size: 15px;
+  background-color: hsl(248, 32%, 49%);
+  color: aliceblue;
+  box-shadow: 0px 10px 0px 0px rgba(109, 108, 108, 0.26);
+}
+
+form {
+  border-radius: 10px;
+  background-color: white;
+  padding: 1.5rem 0;
+  margin: 2rem auto 0;
+}
+
+.input-div{
+  max-width: 600px;
+  margin: auto;
+}
+
+.input-box{
+  margin: auto;
+  position: relative;
+}
+
+.input-box img{
+  position: absolute;
+  top: 0;
+  right: 40px;
+  opacity: 0;
+}
+
+input {
+  border: 2px solid rgba(206, 200, 200, 0.384);
+  border-radius: 5px;
+  padding: 1rem 4rem 1rem 2rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+  outline: none;
+  width: 90%;
+}
+
+button {
+  padding: 1rem 1rem;
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 90%;
+  box-shadow: 0px 1px 1px 2px hsl(143, 72%, 39%);
+}
+
+input:focus {
+  border: 1px solid rgb(33, 9, 71);
+}
+
+form :last-child {
+  padding: 1.1rem;
+  color: hsl(246, 25%, 77%);
+  font-size: x-small;
+}
+
+form :last-child span {
+  padding: 0;
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+button:focus {
+  outline: none;
+}
+
+.input-box .ErrorMassage{
+  text-align: right;
+  font-size: 11px;
+  font-style: italic;
+  color: hsl(0, 100%, 74%);
+  display: block;
+  margin: 0.6rem 2.5rem 1.5rem 0;
+}
+
+.errorStyle{
+  border: 2px solid hsl(0, 100%, 74%);
+}
+
+.successStyle{
+  border: 2px solid hsl(128, 83%, 37%);
+}
+
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url(/intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+  }
+  .container{
+    display: flex;
+    margin: 100px;
+  }
+  
+  .input-div{
+    width: 600px;
+    max-width: 600px;
+  }
+  
+  .left-title p,h2 {
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .left-title p {
+    font-size: 1rem;
+  }
+}
