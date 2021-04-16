@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Spartan', sans-serif;
+}
+
+body {
+  background-image: url(/social-proof-section-master/images/bg-pattern-top-mobile.svg),
+    url(/social-proof-section-master/images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+
+.container {
+  padding: 1.1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.col-left {
+  text-align: center;
+  margin: 5rem 0 2.5rem 0;
+}
+
+.col-left p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  line-height: 1.7rem;
+  color: hsl(303, 10%, 53%);
+}
+
+.col-left h1 {
+  color: hsl(300, 43%, 22%);
+  padding: 0 2rem;
+  line-height: 2rem;
+}
+
+.star-box {
+  list-style: none;
+  text-align: center;
+  align-items: center;
+  padding: 1.5rem 2.2rem;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.star-box span {
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+
+.star-box .star-icon {
+  padding-bottom: 0.8rem;
+}
+
+.card-box {
+  font-size: 15px;
+  background-color: hsl(300, 43%, 22%);
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+}
+
+.card-box .cards-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-box p {
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+}
+
+.card-box .cards-top img {
+  border-radius: 50%;
+  width: 3rem;
+  margin-right: 2rem;
+}
+
+.cards-top span {
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+}
+
+.star-box img {
+  padding-left: 3px;
+}
+
+.bottom {
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 1406px) {
+  body {
+    background-image: url(/social-proof-section-master/images/bg-pattern-top-desktop.svg),
+      url(/social-proof-section-master/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+  }
+
+  .container {
+    min-width: 100vw;
+    padding: 100px;
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .col-left {
+    max-width: 480px;
+    text-align: left;
+    margin-right: 100px;
+  }
+
+  .col-left h1,
+  .star-box .star-icon {
+    padding: 0;
+  }
+
+  .star-box {
+    display: flex;
+    padding: 1.3rem 4rem 1.3rem 2rem;
+  }
+
+  .star-box .star-icon {
+    margin-right: 1.3rem;
+  }
+
+  .col-right .Reviews {
+    transform: translateX(-100px);
+  }
+
+  .col-right .Report {
+    transform: translateX(-50px);
+  }
+
+  .card-box {
+    max-width: 400px;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .second-card {
+    transform: translateY(25px);
+  }
+
+  .threed-card {
+    transform: translateY(50px);
+  }
+}
